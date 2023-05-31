@@ -8,7 +8,7 @@ void calcu_Age(int num)
     {
         age += 2;
     }
-    cout << "NO." << num << " age is " << age << endl;
+    cout << "NO." << num << " age is " << age << "years" << endl;
 }
 
 int main(void)

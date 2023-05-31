@@ -7,6 +7,13 @@ void substr(char *source, int start, int length, char *dest)
     for (int i = 0; i < length; i++)
         *(dest + i) = *((source + start) + i);
     *(dest + length + 1) = '\0';
+    /* or
+    for(int i = start; i < length + start; i++, dest++)
+    {
+        *dest = start[i];
+    }
+    *dest = '\0';
+    */
 }
 
 int main(void)
